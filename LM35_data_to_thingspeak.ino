@@ -125,6 +125,6 @@ void loop() {
   delay(6000);  
 }
 
-
+// reference link : https://elementztechblog.wordpress.com/2015/05/13/esp8266-based-temperature-data-logger-using-arduino/
 
 
