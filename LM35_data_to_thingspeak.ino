@@ -7,10 +7,10 @@ SoftwareSerial espSerial =  SoftwareSerial(2,3);      // arduino RX pin=2  ardui
 
 LM35 temp(A0);
 int sensorpin = 0;
-String apiKey = "KNQL6JRBT7XB34DL";     // replace with your channel's thingspeak WRITE API key
+String apiKey = "your api key";     // replace with your channel's thingspeak WRITE API key
 
-String ssid="shrikant";    // Wifi network SSID
-String password ="shrikant12345";  // Wifi network password
+String ssid="ssid";    // Wifi network SSID
+String password ="password";  // Wifi network password
 
 boolean DEBUG=true;
 
@@ -104,7 +104,8 @@ void setup() {
 void loop() {
 
   // Read sensor values
-   int val = analogRead(sensorpin);
+   int val = analogRead(sensorpin);                     // i have just written different methods to find temp
+                                                        //any of them can be used
    float mv = val* (5000/1024); 
 
    float celcious =( 500 - mv)/10; 
