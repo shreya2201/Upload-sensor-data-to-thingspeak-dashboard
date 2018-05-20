@@ -1,6 +1,6 @@
 #include <LM35.h>
-
-
+#include <Wifi.h>
+#include <WifiUdp.h>
 // Code to use SoftwareSerial
 #include <SoftwareSerial.h>
 SoftwareSerial espSerial =  SoftwareSerial(2,3);      // arduino RX pin=2  arduino TX pin=3    connect the arduino RX pin to esp8266 module TX pin   -  connect the arduino TX pin to esp8266 module RX pin
